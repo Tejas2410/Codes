@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- action attribute defines action to be performed when form is submitted-->
+    <!-- for and id attribute will bind label and input together -->
+    <!-- name attribute is used to identify the form data after it is submitted 
+        to server (JSON data ex. { email : "rahul11@gmail.com") , password : "abc" } -->
+    <!-- value attribute means when form is submitted the response Submit will go to the db-->
+
+    <!-- method attribute -> defines the HTTP method to be used when the form is submitted.
+        
+        1. get : Request a data from a specified resource. (get some response from the server)
+            ex: https://www.amazon.com/search?item=nikeshoes/
+        2. post : Send data to a server to update a resource.
+    -->
+
+    <form method="post" action="/urlOfServer">
+        <label for="abcd">Email</label>
+        <input id="abcd" type="email" name="email" placeholder="email"> <br><br>
+        <label for="pass">Password</label>
+        <input id="pass" type="password" name="password" placeholder="password"> <br><br>
+        <input type="submit" value="Submit">
+        
+        <br><br>
+
+        <label for="gender">Gender</label>
+        <!-- name is key and value is value in JSON-->
+        <input id="male" type="radio" name="Gender" value="male">
+        <label for="male">Male</label>
+        <input id="Female" type="radio" name="Gender" value="female" >
+        <label for="Female">Female</label>
+        
+        <br><br>
+        <button type="button">click me</button>
+
+        <br><br>
+
+        <!-- key is Fruit stored in name and value is value attribute-->
+        <label for="Fruit">Choose a fruit : </label>
+        <select name="Fruit" id="Fruit">
+            <option value="Mango">Mango</option>
+            <option value="Banana" selected>Banana</option>
+            <option value="Peru">Peru</option>
+            <option value="Cherry">Cherry</option>
+        </select>
+
+    </form>
+</body>
+</html>
