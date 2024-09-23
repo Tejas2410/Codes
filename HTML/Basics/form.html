@@ -22,10 +22,13 @@
 
     <form method="post" action="/urlOfServer">
         <label for="abcd">Email</label>
-        <input id="abcd" type="email" name="email" placeholder="email"> <br><br>
+        <input id="abcd" type="email" name="email" placeholder="email" maxlength="15" autofocus> <br><br>
         <label for="pass">Password</label>
-        <input id="pass" type="password" name="password" placeholder="password"> <br><br>
+        <input id="pass" type="password" name="password" placeholder="password" size="40"> <br><br>
         <input type="submit" value="Submit">
+        <input type="submit" value="disabled button" disabled>
+
+        <input type="number" placeholder="age" name="age" min="10" max="100">
         
         <br><br>
 
